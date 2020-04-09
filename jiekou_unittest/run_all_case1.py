@@ -3,8 +3,8 @@ import unittest
 import HTMLTestRunner
 import time
 
-# 给文件名添加当前时间
-now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+# 给文件名添加当前时间，如果要在jenkins上显示html报告，不能加时间戳
+# now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
 
 
 def all_case():
@@ -20,7 +20,8 @@ def all_case():
 if __name__ == "__main__":
     # 返回实例
     runner = unittest.TextTestRunner()
-    report_path = "./report//" + now + 'result.html'
+    # report_path = "./report//" + now + 'result.html'
+    report_path = "./report//" + 'result.html'
     fp = open(report_path, "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'这是我的测试报告', description=u'用例执行情况：')
     # 返回所有用例
