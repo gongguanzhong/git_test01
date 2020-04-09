@@ -44,7 +44,7 @@ def sentmail(file_new):
 
 # 查找测试报告，调用发邮件功能
 def sendreport():
-    result_dir = 'E:\\report\\'
+    result_dir = './report'
     lists = os.listdir(result_dir)
     lists.sort(key=lambda fn: os.path.getmtime(result_dir + "\\" + fn) if not
     os.path.isdir(result_dir + "\\" + fn) else 0)

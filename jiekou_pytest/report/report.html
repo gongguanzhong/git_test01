@@ -397,8 +397,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>report1.html</h1>
-    <p>Report generated on 03-Apr-2020 at 15:21:03 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.21.1</p>
+    <h1>report.html</h1>
+    <p>Report generated on 09-Apr-2020 at 11:11:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.21.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -406,19 +406,19 @@ function filter_table(elem) {
         <td>C:\Java\jdk1.8.0_131</td></tr>
       <tr>
         <td>Packages</td>
-        <td>{&apos;pytest&apos;: &apos;4.6.3&apos;, &apos;pluggy&apos;: &apos;0.12.0&apos;, &apos;py&apos;: &apos;1.8.0&apos;}</td></tr>
+        <td>{&apos;pluggy&apos;: &apos;0.12.0&apos;, &apos;pytest&apos;: &apos;4.6.3&apos;, &apos;py&apos;: &apos;1.8.0&apos;}</td></tr>
       <tr>
         <td>Platform</td>
         <td>Windows-10-10.0.16299-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{&apos;allure-pytest&apos;: &apos;2.7.0&apos;, &apos;rerunfailures&apos;: &apos;7.0&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;, &apos;html&apos;: &apos;1.21.1&apos;, &apos;forked&apos;: &apos;1.0.2&apos;, &apos;xdist&apos;: &apos;1.29.0&apos;}</td></tr>
+        <td>{&apos;allure-pytest&apos;: &apos;2.7.0&apos;, &apos;html&apos;: &apos;1.21.1&apos;, &apos;rerunfailures&apos;: &apos;7.0&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;, &apos;xdist&apos;: &apos;1.29.0&apos;, &apos;forked&apos;: &apos;1.0.2&apos;}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.5.2</td></tr></table>
     <h2>Summary</h2>
-    <p>12 tests ran in 114.92 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">11 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>7 tests ran in 56.68 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">7 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -429,15 +429,6 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_canshu_csv.py::test_request[request_017]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">request_01 = &#x27;1200004&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;request_01&quot;, csv_redeFile(), indirect=True)<br/>    def test_request(request_01):<br/>        result = request_01<br/>&gt;       assert result == &#x27;0&#x27;<br/><span class="error">E       AssertionError: assert &#x27;1200004&#x27; == &#x27;0&#x27;</span><br/><span class="error">E         - 1200004</span><br/><span class="error">E         + 0</span><br/><br/>test_canshu_csv.py:53: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -446,7 +437,11 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为53
+province为江西
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -455,7 +450,11 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为80
+province为江西
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -464,7 +463,11 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为127
+province为江西
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -473,7 +476,11 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为141
+province为江西
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -482,7 +489,11 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为256
+province为江西
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -491,7 +502,11 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为366
+province为江西
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -500,40 +515,8 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_canshu_csv.py::test_request[request_018]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_canshu_csv.py::test_request[request_019]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_canshu_csv.py::test_request[request_0110]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_canshu_csv.py::test_request[request_0111]</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log">---------------------------- Captured stdout setup -----------------------------<br/>division为文科
+level为本科一批
+pre为412
+province为江西
+</div></td></tr></tbody></table></body></html>

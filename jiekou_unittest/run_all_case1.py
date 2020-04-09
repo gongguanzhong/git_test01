@@ -20,7 +20,7 @@ def all_case():
 if __name__ == "__main__":
     # 返回实例
     runner = unittest.TextTestRunner()
-    report_path = "./" + now + 'result.html'
+    report_path = "./report//" + now + 'result.html'
     fp = open(report_path, "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'这是我的测试报告', description=u'用例执行情况：')
     # 返回所有用例
